@@ -9,7 +9,7 @@ use warnings;
 
 while (my $line = prompt("Numerator Polynomial: ", -num))
 {
-	my @polynomial = split(/,? /, $line);
+	my @polynomial = split(/[, ] */, $line);
 
 	$line = prompt("Divided by: ", -num);
 	last unless ($line);
